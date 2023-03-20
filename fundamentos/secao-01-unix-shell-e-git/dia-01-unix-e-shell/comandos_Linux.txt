@@ -1,0 +1,84 @@
+ls -- lista os diretórios
+ls -a -- lista os diretórios ocultos inclusive
+ls * -- Use o comando ls com um valor para listar arquivos que atendam àquele valor.
+O * representa qualquer caractere, em qualquer quantidade.
+cd -- navegar em diretórios
+cd . -- mostra o diretório atual
+cd .. -- retorna ao diretório pai
+mkdir -- cria diretórios
+pwd -- mostra o caminho completo do diretório
+
+touch <nomedoarquivo>.<extensão> -- cria um arquivo no diretório
+cp <aquivo1.txt arquivo2.txt> -- copiar arquivos
+cat -- abrir arquivo
+mv arquivo2.txt /home/dsbellini/Música -- mover arquivo
+mv arquivo2.txt outro_nome.txt -- renomear arquivo
+rm arquivo2.txt -- remover arquivo
+rmdir -- remover diretório (só funciona se estiver vazio)
+rm -rf -- remover diretório com tudo dentro
+touch varios_arquivos{1..5}.txt -- criação de varios arquivos de uma vez (o rm funciona dessa forma também)
+
+less filmes.txt -- exibe parte dosl conteúdos de um arquivoi por pagina. Utilizar barra de espaço para passar pra proxima pagina. Digitar Q para sair da página. Utilizar /nome_desejado para buscar alguma linha no arquivo. Para passar pra próxima, digita N.
+head filmes.txt -- mostra as 10 primeiras linhas do arquivo (funciona head -5 também)
+tail filmes.txt -- exibe as 10 ultimas linhas do arquivo (funciona tail -5 também)
+
+grep Toy filmes.txt -- procura valores com a palavra chave (Toy) no arquivo selecionado
+grep -i 'Toy' -- mesmo funcionamento acima, mas sem caseSensitive
+grep -in 'Toy' -- o mesmo funcionamento acima, mas mostra o número da linha onde está a palavra chave.
+grep -ic 'Toy' -- mesmo funcionamento acima, mas mostra quantas vezes no arquivo essa palavra aparece.
+grep -v -- para buscar por valores que não sejam iguais ao valor especificado.
+
+wc filmes.txt -- contabiliza valores do arquivo. (linhas, palavras, caracteres)
+wc -w filmes.txt -- quantidade de palavras do arquivo
+wc -l filmes.txt -- quantidade de linhas
+wc -m filmes.txt -- quantidade de caracteres
+wc -c filmes.txt -- quantidade de bytes de um arquivo
+
+&&&
+
+Coringas:
+ls * -- mostra tudo dentro do diretório
+ls ?rybe -- caracter coringa para buscar arquivos
+man ls -- manual do comando ls ou qualquer outro comando
+whatis ls -- mostra o que o comando faz
+apropos copy -- mostra os comandos que envolvam cópia de alguma coisa
+
+&&&
+
+
+INPUT
+cat > cores.txt -- adicionar valores, sobrescreve tudo
+amarelo
+vermelho
+azul
++CTRL D 
+
+cat >> cores.txt -- editar e adicionar mais valores sem  sobrescrever
+marrom
+preto
+laranja
+CTRL D 
+
+cat > frutas.txt
+morango
+laranja
+banana
+maca
+CTRL D 
+
+cat cores.txt frutas.txt > tudo.txt -- junta os arquivos em um só
+
+OUTPUT
+
+sort < cores.txt -- ordem alfabética exibida
+sort < cores.txt > coresOrdenadas.txt -- valores ordenados serao enviados para um arquivo novo
+sort -o -- ordenar arquivo
+who -- exibe quem esta utilizando o sistema
+| (pipe) -- 
+who | sort -- o resultado do comando who será enviado para o sort
+
+echo "Este é mais um teste" > teste.txt -- # Pode ser usado para colocar textos dentro de arquivos.
+
+
+
+

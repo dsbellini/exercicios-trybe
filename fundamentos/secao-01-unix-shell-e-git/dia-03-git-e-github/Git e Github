@@ -1,0 +1,44 @@
+Anota aí 📝: O projeto principal é aquele que fica na branch main. É essa branch que vai para a produção, ou seja, que será acessada pelas pessoas usuárias. Após cada alteração ou alterações é importante informar ao Git que está na hora de adicionar a(s) alteração(ões) em um commit, isto é, uma mensagem com o que você alterou no projeto, o que cria um ponto de acesso para essas modificações.
+
+git checkout <branchEscolhida> -- navega entre as Brenchs
+git commit -- cria versões
+git merge <branchEscolhida> -- mesca/fusiona as Brenchs
+git branch -D <branchEscolhida> -- deleta Brenchs
+
+Resumidamente, o processo acontece na seguinte ordem:
+
+Crie uma pasta para armazenar um repositório local: mkdir <nome da pasta>;
+Acesse a pasta criada: cd <nome da pasta criada>;
+Inicie um repositório local nessa pasta, em que é possível ter o controle de versionamento: git init;
+Faça uma modificação inicial, por exemplo: touch README.md;
+Faça uma verificação de quais arquivos foram alterados: git status;
+Adicione os arquivos modificados e selecionados ao que será a próxima versão: git add (git add README.md ou git add .);
+Crie uma nova versão desse repositório local, com uma descrição das diferenças dessa versão em relação à antiga: git commit -m "Mensagem desejada".
+
+git diff -- mostra a diferença das versões
+git commit -am "texto" -- Comita um arquivo já adicionado
+git branch -d nome-da-branch -- deleta branch escolhida 
+git revert -- navegar entre versoes, reverte a versao do commit utilizando a hash
+
+## GITHUB
+
+git push -u origin nome-da-branch -- subir alteraçoes para o github 
+git clone url-do-depositorio -- clona/baixa um repositório remoto já inicializado para a máquina
+git remote -v -- verifica repositório atual
+git pull -- traz as alterações que estão remotas da branch atual
+git pull origin nome-da-branch -- traz as alterações que estao remotas na branch especificada para a branch atual
+git push -- envia alterações realizadas na branch atual
+git log -- mostra os registros dos commits
+git fetch -- Verifica se há diferenças entre a sua branch local atual e a mesma branch no repositório remoto.
+
+Lembre-se de fazer commits com frequência;
+
+Depois de alguns commits, sempre faça um push;
+
+Abra o pull request;
+
+Confira as alterações no GitHub;
+
+Realize o merge no GitHub;
+
+Dê um pull das alterações “mergeadas”.
