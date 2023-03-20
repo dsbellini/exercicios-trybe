@@ -30,15 +30,12 @@ git pull origin nome-da-branch -- traz as alterações que estao remotas na bran
 git push -- envia alterações realizadas na branch atual
 git log -- mostra os registros dos commits
 git fetch -- Verifica se há diferenças entre a sua branch local atual e a mesma branch no repositório remoto.
+git push origin --delete NOMEDABRANCH -- deleta branch remota 
+
 
 Lembre-se de fazer commits com frequência;
-
 Depois de alguns commits, sempre faça um push;
-
 Abra o pull request;
-
 Confira as alterações no GitHub;
-
 Realize o merge no GitHub;
-
 Dê um pull das alterações “mergeadas”.
