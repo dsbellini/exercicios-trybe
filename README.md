@@ -1,3 +1,3 @@
 # trybe-exercicios
 Exercícios da Trybe
-Meu repositório de exercícios
+Treinando GitHub
