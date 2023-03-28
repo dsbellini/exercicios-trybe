@@ -55,7 +55,7 @@
 
 // console.log(message);
 
-/// Quinto exercício ///
+/// Quinto exercício - Operador === ///
 
 // let weekDay = 'sexta-feira';
 
@@ -66,4 +66,23 @@
 //     console.log('Dia de aula na Trybe!')
 // }
 
-/// Sexto exercício ///
+/// Sexto exercício - SWITCH/CASE ///
+
+let resultado = 'blablabla';
+
+switch (resultado) {
+    case 'aprovada':
+        console.log('Parabéns, vc foi aprovada!');
+    break;
+    
+    case 'lista':
+        console.log('Você está na lista de espera');
+    break;
+    
+    case 'reprovada':
+        console.log('Infelizmente voce reprovou');
+    break;
+
+    default:
+        console.log('Informação incorreta');
+}
