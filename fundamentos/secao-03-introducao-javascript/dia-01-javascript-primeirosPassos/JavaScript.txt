@@ -1,0 +1,1 @@
+Saiba mais 💡: um valor truthy é qualquer valor que seja avaliado como verdadeiro em uma condicional, caso contrário são chamados de falsy. Os valores falsy incluem: false, 0, '' (string vazia), null, undefined, e NaN. Por exemplo, uma string que não esteja vazia ou um número diferente de zero são considerados valores truthy. 
