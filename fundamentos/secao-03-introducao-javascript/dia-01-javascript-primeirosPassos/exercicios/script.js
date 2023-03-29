@@ -75,12 +75,12 @@ let cavaloXadrez = 'nada';
 switch (cavaloXadrez) {
     case 'horizontalmente':
         console.log('Se move horizontalmente');
-    break;
+        break;
     case 'verticalmente':
         console.log('Se move verticalmente');
-    break;
-    default: 
-    console.log ('Movimento proibido');
+        break;
+    default:
+        console.log('Movimento proibido');
 }
 console.log('Exercício 6 acima')
 
@@ -93,7 +93,7 @@ let numero1 = 1;
 let numero2 = 3;
 let numero3 = 12;
 
-if (numero1, numero2, numero3 % 2 === 0 ) {
+if (numero1, numero2, numero3 % 2 === 0) {
     console.log(true);
 } else {
     console.log(false);
@@ -106,7 +106,7 @@ let numero4 = 4;
 let numero5 = 4;
 let numero6 = 3;
 
-if (numero1, numero2, numero3 % 2 === 1 ) {
+if (numero1, numero2, numero3 % 2 === 1) {
     console.log(true);
 } else {
     console.log(false);
@@ -151,26 +151,64 @@ if (salarioBruto <= inssFaixa1) {
     salarioBase = salarioBruto - (salarioBruto * 8) / 100
     if (salarioBase <= impostoFaixa1) {
         salarioLiquido = salarioBase;
-        console.log('Seu salário líquido é ' + salarioLiquido);    
-    }       
+        console.log('Seu salário líquido é ' + salarioLiquido);
+    }
 } else if (salarioBruto <= inssFaixa2) {
     salarioBase = salarioBruto - (salarioBruto * 9) / 100
     if (salarioBase <= impostoFaixa2) {
         valorIr = (salarioBase * 7.5) / 100 - deducaoFaixa1;
         salarioLiquido = salarioBase - valorIr;
-        console.log('Seu salário líquido é ' + salarioLiquido);    
+        console.log('Seu salário líquido é ' + salarioLiquido);
     }
 } else if (salarioBruto <= inssFaixa3) {
-        salarioBase = salarioBruto - (salarioBruto * 11) / 100
+    salarioBase = salarioBruto - (salarioBruto * 11) / 100
     if (salarioBase <= impostoFaixa3) {
         valorIr = (salarioBase * 22.5) / 100 - deducaoFaixa1;
         salarioLiquido = salarioBase - valorIr;
-        console.log('Seu salário líquido é ' + salarioLiquido);    
+        console.log('Seu salário líquido é ' + salarioLiquido);
     }
 } else if (salarioBruto > inssFaixa3) {
-    salarioBase = salarioBruto - 570,88;
+    salarioBase = salarioBruto - 570, 88;
     valorIr = (salarioBase * 27.5) / 100 - deducaoFaixa4;
     salarioLiquido = salarioBase - valorIr;
     console.log('Seu salário líquido é ' + salarioLiquido);
 }
 console.log('Exercício 11 acima, FINALMENTE!')
+
+
+
+// const salarioBruto = 8000;
+// let salarioLiquido;
+// let salarioBase;
+// let valorIr;
+
+// const inssFaixas = [1556.94, 2594.92, 5189.82];
+// const impostoFaixas = [1903.99, 2826.66, 3751.06, 4664.69];
+// const deducoes = [142.80, 354.80, 636.13, 869.36];
+
+// if (salarioBruto <= inssFaixas[0]) {
+//   salarioBase = salarioBruto * 0.92;
+//   if (salarioBase <= impostoFaixas[0]) {
+//     salarioLiquido = salarioBase;
+//   }
+// } else if (salarioBruto <= inssFaixas[1]) {
+//   salarioBase = salarioBruto * 0.91;
+//   if (salarioBase <= impostoFaixas[1]) {
+//     valorIr = (salarioBase * 0.075) - deducoes[0];
+//     salarioLiquido = salarioBase - valorIr;
+//   }
+// } else if (salarioBruto <= inssFaixas[2]) {
+//   salarioBase = salarioBruto * 0.89;
+//   if (salarioBase <= impostoFaixas[2]) {
+//     valorIr = (salarioBase * 0.225) - deducoes[0];
+//     salarioLiquido = salarioBase - valorIr;
+//   }
+// } else {
+//   salarioBase = salarioBruto - 570.88;
+//   valorIr = (salarioBase * 0.275) - deducoes[3];
+//   salarioLiquido = salarioBase - valorIr;
+// }
+
+// console.log('Seu salário líquido é ' + salarioLiquido.toFixed(2));
+
+// Código refatorado pelo Chat GPT - Apenas para estudos sobre  um código mais limpo
