@@ -50,3 +50,13 @@ if (valor > 15) {
 } else {
     console.log('Valor menor que 16');
 }
+
+//// Fixando aprendizados
+
+let n;
+
+let resultado = 100;
+for (let index = 0; index <= 9; index += 1) {
+  resultado -= index;
+};
+console.log(resultado);
