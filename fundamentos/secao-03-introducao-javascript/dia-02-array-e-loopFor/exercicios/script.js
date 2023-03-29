@@ -10,7 +10,7 @@ for (let index = 0; index <numbers.length; index += 1) {
 let soma = 0;
 
 for (let index2 = 0; index2 < numbers.length; index2 += 1) {
-    soma =+ numbers[index2];
+    soma = soma + 1 numbers[index2];
 }
 console.log(soma);
 
@@ -86,5 +86,5 @@ for (index8 = 0; index8 < numbers2.length; index8 += 1) {
 let divisaoDoArray = numbers2[index8] / 2;
 
 console.log(divisaoDoArray);
-}
+};
 
