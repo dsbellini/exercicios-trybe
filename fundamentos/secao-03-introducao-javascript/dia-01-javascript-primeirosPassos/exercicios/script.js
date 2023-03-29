@@ -65,7 +65,28 @@ if (angulo1, angulo2, angulo3 === 60) {
 } else {
     console.log('Angulo incorreto')
 }
+// Gabarito abaixo:
+
+// let degreeAngleA = 65;
+// let degreeAngleB = 100;
+// let degreeAngleC = 15;
+
+// let sumOfAngles = degreeAngleA + degreeAngleB + degreeAngleC;
+
+// let allAnglesArePositives = degreeAngleA > 0 && degreeAngleB > 0 && degreeAngleC > 0;
+
+// if(allAnglesArePositives){
+//   if (sumOfAngles === 180) {
+//     console.log(true);
+//   } else {
+//     console.log(false);
+//   };
+// } else {
+//   console.log('Erro: ângulo inválido!');
+// }
+
 console.log('Exercício 5 acima')
+
 
 
 // 6 - Utilize switch/case para escrever um código que receba o nome de uma peça de xadrez e retorne os movimentos que ela pode fazer.
@@ -83,6 +104,32 @@ switch (cavaloXadrez) {
         console.log('Movimento proibido');
 }
 console.log('Exercício 6 acima')
+
+let chessPiece = 'bispo';
+
+// Gabarito abaixo
+// switch (chessPiece.toLowerCase()) {
+//   case 'rei':
+//     console.log('Rei-> Uma casa apenas para qualquer direção.');
+//     break;
+//   case 'bispo':
+//     console.log('Bispo-> Diagonal.');
+//     break;
+//   case 'rainha':
+//     console.log('Rainha-> Diagonal, horizontal e vertical.');
+//     break;
+//   case 'cavalo':
+//     console.log('Cavalo -> "L" pode pular sobre as peças.');
+//     break;
+//   case 'torre':
+//     console.log('Torre -> Horizontal e vertical.');
+//     break;
+//   case 'peão':
+//     console.log("Peão -> Apenas uma casa para frente, no primeiro movimento podem ser duas casas.");
+//     break;
+//   default:
+//     console.log('Erro, peça inválida!');
+// };
 
 
 // 7 - Utilize if/else para escrever um código que converta uma nota dada em porcentagem (de 0 a 100) em conceitos de A a F. Siga as seguintes regras:
@@ -106,7 +153,7 @@ let numero4 = 4;
 let numero5 = 4;
 let numero6 = 3;
 
-if (numero1, numero2, numero3 % 2 === 1) {
+if (numero4, numero5, numero6 % 2 !== 0) {
     console.log(true);
 } else {
     console.log(false);
@@ -168,7 +215,7 @@ if (salarioBruto <= inssFaixa1) {
         console.log('Seu salário líquido é ' + salarioLiquido);
     }
 } else if (salarioBruto > inssFaixa3) {
-    salarioBase = salarioBruto - 570, 88;
+    salarioBase = salarioBruto - 570.88;
     valorIr = (salarioBase * 27.5) / 100 - deducaoFaixa4;
     salarioLiquido = salarioBase - valorIr;
     console.log('Seu salário líquido é ' + salarioLiquido);
