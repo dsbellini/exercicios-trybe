@@ -10,7 +10,7 @@ for (let index = 0; index <numbers.length; index += 1) {
 let soma = 0;
 
 for (let index2 = 0; index2 < numbers.length; index2 += 1) {
-    soma = soma + 1 numbers[index2];
+    soma += [index2];
 }
 console.log(soma);
 
