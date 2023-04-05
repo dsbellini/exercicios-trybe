@@ -20,7 +20,7 @@
 
 // 2 – Crie uma função que calcule a área de um círculo
 
-// const areaDoCirculo = (numero) => {
+// function areaDoCirculo (numero) {
 //     let areaCirculo = (numero*numero)*3.14
 //     return areaCirculo;
 // }
@@ -45,7 +45,7 @@
 function maiorPalavra (frase) {
     const palavras = frase.split(' '); // quebra a frase em palavras
     let maior = ''; // inicializa a maior palavra como uma string vazia
-    
+
     for (let index = 0; index < palavras.length; index+= 1) {
         const palavra = palavras[index];
         if (palavra.length > maior.length) { // verifica se a palavra atual é maior que a maior palavra
