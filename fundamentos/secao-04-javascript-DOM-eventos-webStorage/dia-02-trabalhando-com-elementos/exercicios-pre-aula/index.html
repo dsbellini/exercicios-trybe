@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main id="parent-of-parent">
+        <section id="parent">
+          <section id="first-child"></section>
+          <section id="where-are-you">
+            <section id="first-child-of-child"></section>
+          </section>
+          Attention!
+          <section id="third-child"></section>
+          <section id="fourth-and-last-child"></section>
+        </section>
+      </main>
+      <script>
+        
+        //Acesse o elemento where-are-you.
+        let where = document.getElementById('where-are-you');
+        // Acesse parent a partir de where-are-you e adicione uma color a ele.
+        const parent = where.parentNode.parentNode.style.color = 'darkred';
+        // where-are-you.parentElement;
+        // parent.style.color = 'color'
+        // gabarito acima
+
+        // Acesse o first-child-of-child e adicione um texto a ele. Você se lembra dos vídeos da aula anterior? Eles ensinam como fazer isso.
+        let primeiroFilho = document.getElementById('first-child-of-child').innerText = "Texto";
+        // Acesse o first-child a partir de parent.
+        let firstChildParent = document.getElementById('parent');
+        firstChildParent = firstChildParent.firstElementChild; 
+        // Acesse o first-child a partir de where-are-you.
+        let firstChildWhere = document.getElementById('where-are-you');
+        firstChildWhere = firstChildWhere.previousElementSibling
+        // Acesse o texto Attention! a partir de where-are-you.
+        let textAttention = document.getElementById('where-are-you');
+        textAttention = textAttention.nextSibling
+        // Acesse o third-child a partir de where-are-you
+        let thirdWhere = document.getElementById('where-are-you');
+        thirdWhere = thirdWhere.nextElementSibling;
+        // Acesse o third-child a partir de parent.
+        let thirdParent = document.getElementById('parent');
+        thirdParent = thirdParent.children[2];
+
+      </script>
+</body>
+</html>
