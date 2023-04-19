@@ -1,0 +1,14 @@
+body {
+    max-width: 50%;
+    margin: auto;
+    background-image: url(https://images.unsplash.com/photo-1488646953014-85cb44e25828?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1935&q=80);
+    background-blend-mode:difference;
+}
+
+.btn-margin {
+    margin: 10px
+}
+
+h1 {
+    background-color: var(--bs-body-bg);
+}
