@@ -96,14 +96,69 @@ const clients = [
   ];
   
   const findPersonByName = (name) => {
-    // seu código aqui
-    
+    let person;
+    try {
+    for (let index = 0; index < clients.length; index += 1) {
+      if (clients[index].name === name) {
+        person = clients[index];
+      }
+    }
+    if (!person) {
+      throw new Error('Pessoa não encontrada, tente novamente');
+    }
+    const receiverName = `Destinatário: ${person.name}`
+    const fullAdress = `Endereço: ${person.address.street}, Número: ${person.address.number}, Bairro: ${person.address.neighborhood}, Cidade: ${person.address.city}, Estado: ${person.address.state}, CEP: ${person.address.cep}`;
+    return `${receiverName}, ${fullAdress}`
+  } catch (error) {
+    return error.message;
+  }
   };
+  console.log(findPersonByName('Rafael Ferreira')) // fluxo ok
+  console.log(findPersonByName('Rafael Xablau')) // fluxo execeção
+
   
   const findPersonByPosition = (position) => {
-    // seu código aqui
-  };
+      try {
+        const person = clients[position];
+        if (!person) {
+          throw new Error('Posição inválida, tente novamente');
+        }
+        return `Cliente: ${person.name}. email: ${person.email}`;
+      } catch (error) {
+        return error.message;
+      }
+    };
+  console.log(findPersonByPosition(5)); // Fluxo completo
+  console.log(findPersonByPosition(10)); // Fluxo de exceção
   
   const findPeopleByState = (state) => {
     // seu código aqui
-  };
+  }
+  
+    const validateInfo = (name, age) => {
+      if (!name || !age) {
+        throw new Error("Todas as informações são necessárias");
+      }
+    };
+    
+    const validateLegalAge = (age) => {
+      if (age < 18) {
+        throw new Error(
+          "Ops, infelizmente nesse momento você não pode fazer as aulas"
+        );
+      }
+    };
+    
+    const studentRegister = (name, age) => {
+      try {
+        validateInfo(name, age);
+        validateLegalAge(age);
+        return `${name}, boas-vindas à AuTrybe!`;
+      } catch (error) {
+        return error.message;
+      }
+    };
+    console.log(studentRegister("Carlos", 18)); // Fluxo completo
+    console.log(studentRegister("Carlos", 12)) // Fluxo de exceção
+    console.log(studentRegister("Renan")) // Fluxo de exceção
+    
