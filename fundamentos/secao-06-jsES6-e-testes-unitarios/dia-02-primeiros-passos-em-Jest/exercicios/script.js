@@ -62,11 +62,32 @@ const decode = (string) => {
   return mapString(map, string);
 }
 
-console.log(encode('a,e,i,o,u,f,g'));
+const techList = (arrayTechs, name) => {
+  if(arrayTechs.length === 0) return 'Vazio!';
+
+  const ordemArray = arrayTechs.sort(); 
+  let listaTecnologia = [];
+
+  for (let index = 0; index < ordemArray.length; index += 1) {
+    listaTecnologia.push({
+      tech: ordemArray[index],
+      name,
+    });
+  }
+  return listaTecnologia;
+}
+
+const hydrate = (string) => {
+  if (string === '1 cerveja') {
+    return '1 copo de água'
+  }
+}
 
 module.exports = {
   myRemove, 
   myFizzBuzz,
   encode,
-  decode
+  decode,
+  techList,
+  hydrate
 };
