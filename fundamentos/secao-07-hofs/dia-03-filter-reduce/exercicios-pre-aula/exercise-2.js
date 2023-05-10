@@ -75,8 +75,10 @@ const estudantes = [
     },
   ];
 
-const melhorMateria = estudantes.map((estudante) => {
-    const maiorNota = estudante.materias.reduce((acc, materia) => (materia.nota > acc.nota) ? materia : acc)
+const melhorMateria = estudantes.
+        map((estudante) => {
+    const maiorNota = estudante.materias
+        .reduce((acc, materia) => (materia.nota > acc.nota) ? materia : acc)
 
     const objeto = {
         name: estudante.nome,
