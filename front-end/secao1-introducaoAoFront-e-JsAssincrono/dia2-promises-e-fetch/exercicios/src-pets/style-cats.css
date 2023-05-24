@@ -2,6 +2,11 @@ body {
     background-color: darkgray;
     color: white;
 }
+h1 {
+    font-family: sans-serif;
+    text-align: center;
+    color: #36395A;
+}
 
 main {
     display: flex;
